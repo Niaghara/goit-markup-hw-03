@@ -1,3 +1,3 @@
-goit-markup-hw-02
+goit-markup-hw-03
 GoIT Full Stack 72, група 07.
-Домашня робота HTML+CSS 72. Модуль 2
+Домашня робота HTML+CSS 72. Модуль 3
