@@ -151,6 +151,7 @@ a:focus {
   display: flex;
   align-items: center;
   margin-left: auto;
+  margin-right: 0;
   gap: 50px;
 }
 
@@ -240,6 +241,9 @@ a:focus {
   min-width: 270px;
 }
 
+advantages-card:nth-child(4n) {
+  margin-right: 0;
+}
 .advantages-title {
   margin-bottom: 10px;
 }
@@ -263,8 +267,13 @@ a:focus {
   background-color: var(--primary-white-color);
   --items: 4;
 }
-.img-team {
-  margin-bottom: 30px;
+
+.team-card-wrap {
+  border: 1px solid var(--border-color);
+  border-top: none;
+  border-radius: 4px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-name {
@@ -336,14 +345,14 @@ a:focus {
   background-color: var(--background-color-secondary);
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
+
   border: none;
 
   display: block;
   padding: 6px 22px;
 }
 
-.container-filter {
+.filter-list {
   margin-left: auto;
   margin-right: auto;
 }
@@ -351,6 +360,9 @@ a:focus {
 .project-card-wraper {
   padding: 20px 24px;
   width: 322px;
+  border: 1px solid var(--border-color);
+  border-top: none;
+  border-radius: 4px;
 }
 .filter-button:hover,
 .filter-button:focus,
@@ -376,8 +388,6 @@ a:focus {
 }
 .project-card {
   background: var(--primary-white-color);
-  border: 1px solid var(--border-color);
-  border-top: none;
   width: 370px;
 }
 .project-card:nth-child(3n) {
@@ -388,4 +398,5 @@ a:focus {
   display: flex;
   gap: 8px;
   margin-bottom: 34px;
+  justify-content: center;
 }
