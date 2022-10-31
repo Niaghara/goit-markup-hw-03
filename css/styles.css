@@ -1,3 +1,4 @@
+
 /* Цвет основного текста   #757575; */
 /* Вторичный цвет текста rgba(255, 255, 255, 0.6)*/
 /* цвет заголовков #212121 */
@@ -24,6 +25,7 @@
   --background-color-secondary: #f5f4fa;
   --background-color-dark: #2f303a;
   --border-color: #eeeeee;
+  --border-color-header: #ececec;
   --indent: 30px;
   --items: 3;
 }
@@ -68,10 +70,6 @@ img {
   margin-right: auto;
   align-items: center;
 }
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .logo-header {
   color: var(--primary-black-color);
@@ -95,10 +93,13 @@ img {
 .container-nav {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid var(--border-color-header);
 }
+
 .site-nav {
   margin-right: auto;
 }
+
 .site-nav .list a {
   font-weight: 500;
   font-size: 14px;
@@ -180,7 +181,8 @@ a:focus {
 /* Hero */
 .hero {
   background: var(--background-color-dark);
-  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero .hero-title {
@@ -194,7 +196,7 @@ a:focus {
 
   box-sizing: content-box;
   width: 696px;
-  padding-top: 200px;
+
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -218,7 +220,7 @@ a:focus {
   display: block;
   min-width: 216px;
   min-height: 50px;
-  padding: 10px 32px;
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -232,8 +234,17 @@ a:focus {
   color: var(--title-text-color);
 }
 
-.works {
-  padding-bottom: 109px;
+.advantages-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.section-advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .advantages-card {
@@ -257,6 +268,10 @@ advantages-card:nth-child(4n) {
   color: var(--title-text-color);
 
   margin-bottom: 50px;
+}
+
+.section-works {
+  padding-bottom: 109px;
 }
 
 /* Team */
@@ -292,12 +307,18 @@ advantages-card:nth-child(4n) {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  padding-bottom: 30px;
+}
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* Footer */
 .footer {
   background: var(--background-color-dark);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-bottom {
@@ -314,13 +335,23 @@ advantages-card:nth-child(4n) {
   text-decoration: none;
 }
 
-.footer-address {
+.footer-address,
+.footer-phone {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
   text-decoration: none;
+}
+
+.footer-list-address {
+  display: block;
+}
+
+.footer-address-address,
+.footer-contacts {
+  margin-bottom: 9px;
 }
 
 .address {
@@ -334,6 +365,11 @@ advantages-card:nth-child(4n) {
 
 /* Портфоліо. Фільтр-ліст */
 
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .filter-button {
   font-family: "Roboto";
   font-weight: 500;
@@ -344,7 +380,6 @@ advantages-card:nth-child(4n) {
   color: var(--title-text-color);
   background-color: var(--background-color-secondary);
   cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   border: none;
 
@@ -353,8 +388,12 @@ advantages-card:nth-child(4n) {
 }
 
 .filter-list {
+  display: flex;
+  gap: 8px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
+  justify-content: center;
 }
 
 .project-card-wraper {
@@ -364,11 +403,13 @@ advantages-card:nth-child(4n) {
   border-top: none;
   border-radius: 4px;
 }
+
 .filter-button:hover,
 .filter-button:focus,
 .filter-button:active {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .projects-title {
@@ -386,17 +427,12 @@ advantages-card:nth-child(4n) {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+
 .project-card {
   background: var(--primary-white-color);
   width: 370px;
 }
+
 .project-card:nth-child(3n) {
   margin-right: 0;
-}
-
-.filter-list {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 34px;
-  justify-content: center;
 }
