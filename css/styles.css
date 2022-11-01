@@ -90,10 +90,13 @@ img {
 
 /* Навигация сайта */
 
+.header {
+  border-bottom: 1px solid var(--border-color-header);
+}
+
 .container-nav {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--border-color-header);
 }
 
 .site-nav {
@@ -323,20 +326,9 @@ advantages-card:nth-child(4n) {
 
 .logo-bottom {
   display: inline-block;
-  padding-top: 60px;
 }
 
-.footer-contacts {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-  text-decoration: none;
-}
-
-.footer-address,
-.footer-phone {
+.footer-address-address {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -345,18 +337,27 @@ advantages-card:nth-child(4n) {
   text-decoration: none;
 }
 
+.footer-contacts,
+.footer-phone {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color:  var(--secondary-text-color);
+  text-decoration: none;
+}
+
 .footer-list-address {
   display: block;
 }
 
-.footer-address-address,
-.footer-contacts {
-  margin-bottom: 9px;
+.address {
+  display: block;
+  margin-top: 30px;
 }
 
-.address {
-  margin-top: 30px;
-  padding-bottom: 60px;
+.footer-list-address:not(:last-child)  { 
+  margin-bottom: 9px; 
 }
 
 .logo-footer {
